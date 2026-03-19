@@ -211,7 +211,7 @@ pnpm preview
 4. **Ingresa la contraseña:** Usa una contraseña fuerte (el indicador te mostrará su fortaleza)
 5. **Procesa:** El archivo encriptado/desencriptado se descargará automáticamente
 
-<img width="2320" height="1774" alt="image" src="https://github.com/user-attachments/assets/7115d9b0-25fc-4ec4-87c8-3365ad8825c5" />
+<img width="2566" height="1912" alt="image" src="https://github.com/user-attachments/assets/c5aeed14-3ce1-4873-b8c4-a19bc4111083" />
 <br><br>
 
 > **Nota:** El algoritmo, la versión y los metadatos se detectan automáticamente al desencriptar. No necesitas recordar qué cifrado usaste ni configurar nada manualmente.
