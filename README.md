@@ -1,4 +1,4 @@
-<img width="2502" height="1888" alt="image" src="https://github.com/user-attachments/assets/48d4885b-a870-4be4-9aa9-c4918e96ebec" />
+<img width="2554" height="1772" alt="image" src="https://github.com/user-attachments/assets/63ec2e24-4a94-4afe-bc03-69aae9473fff" />
 
 Herramienta de encriptado y desencriptado de archivos con interfaz web minimalista. Utiliza exclusivamente cifrado autenticado AES-GCM con derivación de claves PBKDF2 a 600.000 iteraciones (estándar OWASP 2024+). Todo el procesamiento ocurre localmente en tu navegador — ningún dato sale de tu máquina.
 
