@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Segoe UI Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Use Space Grotesk for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', 'Space Mono', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: 0.6px;
+}
+
+/* Selection */
+::selection {
+  background: rgba(23, 255, 53, 0.3);
+  color: #17FF35;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #166534;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #17FF35;
+}
+
+/* Matrix rain animation */
+@keyframes matrix-rain {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.animate-matrix-rain {
+  animation: matrix-rain linear infinite;
+}
+
+/* Scanlines effect */
+.bg-scanlines {
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+}
+
+/* Button glow on hover */
+button:not(:disabled):hover {
+  filter: drop-shadow(0 0 10px rgba(23, 255, 53, 0.4));
+}
+
+/* Disable green glow for specific buttons (use class `no-green-glow`) */
+button.no-green-glow:not(:disabled):hover {
+  filter: none;
+  box-shadow: none;
+}
